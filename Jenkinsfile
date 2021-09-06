@@ -13,7 +13,7 @@ pipeline {
         }
         stage('CodeQuality') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.host.url=http://20.110.49.31:9000 -Dmaven.test.skip=true"
+                sh "mvn sonar:sonar -Dsonar.host.url=http://20.97.213.199:9000 -Dmaven.test.skip=true"
             }
         }
 		stage('DeployToDevEnv') {
